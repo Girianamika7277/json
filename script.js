@@ -11,10 +11,10 @@ $(document).ready(function () {
         // Create a new row for each item in the JSON
         var newRow = $('<tr>');
         newRow.append($('<td>').text(item.Hospital)); // Replace 'column1' with your actual JSON field name
+           newRow.append($('<td>').text(item.Address));
         newRow.append($('<td>').text(item.City)); // Replace 'column2' with your actual JSON field name
         newRow.append($('<td>').text(item.State));
-        newRow.append($('<td>').text(item.Address));
-        newRow.append($('<td>').text(item.Pin));
+      newRow.append($('<td>').text(item.Pin));
         // Add more columns as needed
 
         // Append the new row to the table body
